@@ -1,0 +1,7 @@
+@import url(../style.css);
+body.timeline-wd{
+    background-image: url(../img/world/wd.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: centurylight;
+    src: url(century-gothic-paneuropean-light.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: centurybold;
+    src: url(centurygothic_bold.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: garetlight;
+    src: url('Garet-Book.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: garetbold;
+    src: url(garet-bold.otf);
+}

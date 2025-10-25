@@ -1,0 +1,82 @@
+@import url(fonts/fonts.css);
+@import url(pages/brasil.css);
+@import url(pages/mundo.css);
+@import url(pages/sobre.css);
+@import url(pages.css);
+@import url(index.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-drag: none;
+    outline: none;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    min-width: 416px;
+    background-color: rgb(15, 15, 15);
+}
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 4rem;
+    display: flex;
+}
+.container-menu{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-family: centurylight;
+    width: 100%;
+}
+.container-menu ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    color: white;
+}
+.item a{
+    color: rgb(165, 165, 165);
+    transition: 0.3s;
+}
+.item a:hover{
+    color: white;
+}
+.container-menu span{
+    font-size: 1.7rem;
+    margin: 0 5px;
+}
+.item{
+    margin: 0 10px;
+}
+.voltar{
+    font-family: monospace;
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+    transition: 0.3s;
+}
+.voltar:hover{
+    color: white;
+}
+.full-screen{
+    height: 20vh;
+    width: 100%;
+}
+@media(max-width:60rem){
+    .voltar{
+        color: white;
+    }
+    .item a{
+        color: white;
+    }
+}

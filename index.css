@@ -1,0 +1,135 @@
+.selaron img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.selaron{
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+}
+.presents{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.circle{
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    background-color: white;
+    border-radius: 1000rem;
+    justify-content: center;
+    object-fit: cover;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.circle img{
+    height: 60%;
+    width: auto;
+    transform: translateY(25%);
+}
+.sobre-title{
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+.sobre-title span{
+    font-family: centurybold;
+    font-size: 3rem;
+}
+.sobre-text{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.present-block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+    font-family: centurylight;
+}
+.conhecer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.conhecer span{
+    font-family: centurylight;
+    font-size: 2rem;
+}
+.conhecer button{
+    all: unset;
+    background: linear-gradient(to right, #f37214, #f4a716);
+    padding: 0.8rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-family: centurybold;
+}
+.yellow{
+    font-weight: bolder;
+    align-items: center;
+    display: flex;
+    width: 40rem;
+    height: 11.5rem;
+    background-color: rgb(255, 221, 0);
+    position: absolute;
+    left: 0;
+    transform: translateY(-150%);
+    color: black;
+}
+.yellow-t{
+    display: flex;
+    flex-direction: column;
+}
+.yellow-t span{
+    font-family: garetbold;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.yellow-t p{
+    font-family: garetlight;
+    font-size: 2rem;
+}
+.world{
+    margin: 0 1.5rem;
+    height: 78%;
+    width: auto;
+}
+.interface{
+    width: 100%;
+}
+@media(max-width:60rem){
+    .selaron{
+        height: 30vh;
+    }
+    .circle{
+        height: 8rem;
+        width: 8rem;
+    }
+    .sobre-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .yellow{
+        width: 25rem;
+        height: 7.18rem;
+        transform: translateY(-50%);
+    }
+    .yellow-t span{
+        font-size: 160%;
+        line-height: 100%;
+    }
+    .yellow-t p{
+        font-size: 110%;
+    }
+}
