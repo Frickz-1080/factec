@@ -1,0 +1,168 @@
+@import url(style.css);
+
+.line{
+    width: 3px;
+    background: white;
+    position: relative;
+    top: 6.25rem;
+}
+.line::before{
+    content: '';
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 1000rem;
+    top: 0;
+}
+.line::after{
+    content: '';
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+}
+
+.scroll{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    position: relative;
+}
+.bloco{
+    display: flex;
+    width: 16rem;
+    height: 11rem;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.bloco img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.bloco:hover{
+    height: 92%;
+}
+.ano{
+    font-family: centurylight;
+    font-size: 3rem;
+}
+.sub-lines{
+    height: 100%;
+    width: 2.5rem;
+}
+.noticeL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 5 por 8 */
+    height: 12.5rem;
+    font-family: centurygothic;
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    gap: 10px;
+}
+.noticeR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 5 por 8 */
+    height: 12.5rem;
+    font-family: centurygothic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    gap: 10px;
+}
+
+.space{
+    height: 12.5rem;
+    background-color: black;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    gap: 12.5rem;
+}
+
+.rigth{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 12.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    gap: 12.5rem;
+    margin-bottom: 10rem;
+}
+.mark{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.69);
+    border-bottom-right-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+    font-family: centurylight;
+    font-size: 1.1rem;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ========================================= MOBILE =========================================== */
+
+
+@media(max-width:60rem){
+    .sub-lines{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    .box{
+        display: grid;
+    }
+    .notice{
+        width: 90vw;
+    }
+    .bloco{
+        margin: 4px;
+        position: absolute;
+    }
+    .ano{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        width: 20%;
+        font-size: 5rem;
+    }
+    .noticeL{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        position: absolute;
+    }
+    .bloco:hover{
+        height: 11rem;
+    }
+}

@@ -1,0 +1,6 @@
+@import url(../style.css);
+body.timeline-br{
+    background-image: url(../img/brasil/br.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
